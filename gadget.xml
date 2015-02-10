@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<gadget>
+
+	<name>VJ</name> 
+        <namespace>windows.sdk</namespace>
+	<version>1.0.0.0</version> 
+	<author name="Vijay R Chintamani"> 
+		<info url="http://about.me/vijaychintamani" /> 
+		<logo src="logo.png"/> 
+	</author> 
+	<copyright>&#169; Vijay R Chintamani.</copyright> 
+	<description>This is a simple gadget.</description> 
+	<hosts> 
+		<host name="sidebar"> 
+			<autoscaleDPI>true</autoscaleDPI>
+			<base type="HTML" apiVersion="1.0.0" src="vijay.html" /> 
+			<permissions>Full</permissions> 	
+			<platform minPlatformVersion="1.0" /> 
+		</host> 
+	</hosts> 
+</gadget>
