@@ -1,0 +1,16 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   demo.css
+#	new file:   gadget.xml
+#	new file:   index.js
+#	new file:   jquery-1.11.2.min.js
+#	new file:   jquery-1.7.2.min.js
+#	new file:   vijay.html
+#
+

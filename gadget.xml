@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?> 
 <gadget>
 
-	<name>VJ</name> 
+	<name>mt</name> 
         <namespace>windows.sdk</namespace>
 	<version>1.0.0.0</version> 
 	<author name="Vijay R Chintamani"> 
@@ -13,7 +13,7 @@
 	<hosts> 
 		<host name="sidebar"> 
 			<autoscaleDPI>true</autoscaleDPI>
-			<base type="HTML" apiVersion="1.0.0" src="vijay.html" /> 
+			<base type="HTML" apiVersion="1.0.0" src="tabs.html" /> 
 			<permissions>Full</permissions> 	
 			<platform minPlatformVersion="1.0" /> 
 		</host> 
