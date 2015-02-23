@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?> 
 <gadget>
 
-	<name>mt</name> 
+	<name>Tangoe Trac</name> 
         <namespace>windows.sdk</namespace>
 	<version>1.0.0.0</version> 
 	<author name="Vijay R Chintamani"> 
