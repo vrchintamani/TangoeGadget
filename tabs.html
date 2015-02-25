@@ -1,38 +1,51 @@
 ﻿<html>
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<style type="text/css">
-	body{
-		width:600px;
-		height:600px;
-		background-color:gray;
-	}	
-}
-</style>
-     <title>Tangoe Trac</title>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    <style type="text/css">
+        body {
+            width: 600px;
+            height: 600px;
+            background-color: gray;
+        }
+    </style>
+    <title>Tangoe Trac</title>
+    <link rel="stylesheet" href="jquery-style.css">
 </head>
 <body>
-<div style="color:white;font-size:12pt">
-Hello <label id="userName"></label>
-</div><br/>
-<div id="MainContainer"  style="height: 500px;width:100%; float: left;overflow: auto;overflow-x:hidden;"">
-   
-</div> 
-    <script src="http://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
-    <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js" type="text/javascript"></script>
-	<script type="text/javascript" src="index.js"></script>
+    <div style="color:white;font-size:12pt">
+        Hello <label id="userName"></label>
+    </div><br />
+    <div id="MainContainer" style="height: 500px;width:100%; float: left;">
+
+    </div>
+    <script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="jquery-ui.js" type="text/javascript"></script>
     <script>
         $(function () {
-          	
-			LoadContent();
-			
-			$("#MainContainer").tabs();
+            $.support.cors = true;
+            try {
+                $.ajax({
+                    type: "get",
+                    async: false,
+                    cache: false,
+                    url: 'http://localhost/GadgetDemo/api/Values', //'http://gprasad16430:9999/TangoeTrac/ServletVersion?userName='+loggedUserName,
+                    success: function (data) {
+                        $('#MainContainer').html(data);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#MainContainer').html('Unable to connect to the server');
+                    }
+                });
+                $("#ticketsTab").click();
+                $("#MainContainer").tabs();
+            }
+            catch (err) {
+                $('#MainContainer').html('Unable to connect to the server');
+            }
         });
     </script>
- 
+
 
 </body>
 </html>
